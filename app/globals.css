@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --token-6a436fdb-cfe4-4fb3-98a2-0047d69a3e67: #ffffff;
+  --token-3a0fa354-abe3-4360-9c94-f065775262c1: #f2f2f2;
+  --token-6f75cdb5-16a7-400b-8b91-e6cf5549da82: #cccccc;
+  --token-e178fe2f-2333-447c-a941-77634daeae46: #a3a3a3;
+  --token-06953b5a-453f-457c-b76d-01fb16b803ec: #858585;
+  --token-79bed57b-21d2-417f-ada4-4eec29b38339: #525252;
+  --token-dc152288-15fb-4725-b6f6-ea0de6f49838: #333333;
+  --token-3053a932-1fff-4b28-8bfa-32fc47006333: #292929;
+  --token-f7af88c8-3249-4d89-b6f5-2588a88428f2: #1a1a1a;
+  --token-26ca0a36-09c8-4577-8404-8ca52e2ba1d9: #0f0f0f;
+  --token-0c3c4591-0d79-4c96-8c4f-053f091b0ddc: #2a6df4;
+  --token-e20aacd7-d8ae-4de0-bc95-76ea327db9d8: #772af4;
+  --token-911c0707-40eb-4c36-8182-4bf0fd79d314: #12a588;
+  --token-0a3564c8-936c-48be-af5c-52780a298f17: #f24f36;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: var(--token-26ca0a36-09c8-4577-8404-8ca52e2ba1d9, #0f0f0f);
+  color: #ffffff;
+}
