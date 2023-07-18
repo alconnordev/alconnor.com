@@ -24,16 +24,16 @@ export default function RootLayout({
     >
       {/* className={inter.className} */}
       <body>
-        {children}
+        {/* {children} */}
         <TailwindIndicator></TailwindIndicator>
-        {/* <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
           {children}
-        </ThemeProvider> */}
+        </ThemeProvider>
       </body>
     </html>
   )

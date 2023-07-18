@@ -1,3 +1,4 @@
+import { Container } from '~/components/Container'
 import { Header } from './Header'
 import {
   AnimatePresence,
@@ -14,7 +15,7 @@ export default function BlogLayout({
   return (
     <div className="relative flex h-min min-h-full w-auto flex-col flex-nowrap items-center justify-start gap-0 overflow-visible p-0 ">
       <Header />
-      <div className="relative">{children}</div>
+      <Container className="relative">{children}</Container>
     </div>
   )
 }
