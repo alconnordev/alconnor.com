@@ -1,7 +1,15 @@
 import Image from 'next/image'
 import { Card } from '~/components/Card'
 import { Profile } from '~/config/profile'
-import { ArrowRight, Facebook, Instagram, Twitter, Youtube } from 'lucide-react'
+import {
+  ArrowRight,
+  Facebook,
+  Instagram,
+  MapPin,
+  Palmtree,
+  Twitter,
+  Youtube,
+} from 'lucide-react'
 import clsx from 'clsx'
 import Link from 'next/link'
 import avatarImage from '~/assets/profile/avatar.png'
@@ -9,7 +17,7 @@ import avatarImage from '~/assets/profile/avatar.png'
 export default function BlogHomePage() {
   return (
     <div className="flex gap-3 text-white">
-      <Card>
+      <Card className="h-[318px]">
         <div className="relative flex w-full items-center justify-between">
           <Link
             href="/"
@@ -33,16 +41,16 @@ export default function BlogHomePage() {
         <div className="mt-5 text-[#525252]">Wei Chen • Freelance</div>
       </Card>
 
-      <div className="flex flex-col">
-        <Card>
-          <div className="flex">
-            <div>Title</div>
-            <h2>Product Designer</h2>
+      <div className="flex flex-col justify-between">
+        <Card className="flex items-center justify-between">
+          <div className="flex flex-col">
+            <div className="text-[#525252]">Full Stack&nbsp;</div>
+            <h2 className="block text-xl text-white">{'<Developer />'}</h2>
           </div>
-          <div>123</div>
+          <Palmtree />
         </Card>
 
-        <div className="my-3 flex justify-around">
+        <div className="flex justify-around">
           <Card className="w-fit">
             <Twitter />
           </Card>
@@ -57,16 +65,20 @@ export default function BlogHomePage() {
           </Card>
         </div>
 
-        <Card>
-          <div className="flex">
+        <Card className="flex items-center justify-between">
+          <div className="flex flex-col">
             <div>Based in</div>
-            <div>Manhattan, NY</div>
+            <div>Guangzhou, Guangdong</div>
           </div>
-          <div>Icon</div>
+          <MapPin></MapPin>
         </Card>
       </div>
 
-      <Card>234</Card>
+      <Card>
+        <div>
+          <div>Recently</div>
+        </div>
+      </Card>
     </div>
   )
 }
