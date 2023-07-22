@@ -1,11 +1,5 @@
 import { Container } from '~/components/Container'
 import { Header } from './Header'
-import {
-  AnimatePresence,
-  motion,
-  useMotionTemplate,
-  useMotionValue,
-} from 'framer-motion'
 
 export default function BlogLayout({
   children,
